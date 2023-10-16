@@ -1,0 +1,77 @@
+:root {
+	--color-blue: #0077cc;
+	--color-white: #fff;
+	--color-black: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-black);
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.logo {
+	font-family: "Advent Pro", sans-serif;
+	color: var(--color-white);
+	padding: 2.7rem 0;
+	font-size: 3rem;
+	font-weight: normal;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.nav {
+	display: none;
+}
+.hero {
+	padding: 0 1.5rem;
+	color: var(--color-white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	letter-spacing: 2px;
+	background-image: url(/images/abstract-photo.webp);
+	background-size: cover;
+}
+
+.hero__heading {
+	font-family: "Advent Pro", sans-serif;
+	margin: 1.2rem 0;
+	font-size: 3.4rem;
+	font-weight: 700;
+}
+
+.hero__desc {
+	margin: 1.2rem 0;
+	font-weight: 300;
+	font-size: 1.8rem;
+}
+
+.btn-book {
+	margin-top: 5rem;
+	padding: 1rem 4.4rem;
+	border-radius: 15px;
+	background-color: var(--color-white);
+	color: var(--color-blue);
+	font-size: 2.6rem;
+}
