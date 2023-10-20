@@ -1,0 +1,26 @@
+@import url(/css/components/buttons.css);
+
+.hero {
+	padding: 0 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	letter-spacing: 2px;
+	background-image: url(/images/abstract-photo.webp);
+	background-size: cover;
+}
+
+.hero__heading {
+	font-family: "Advent Pro", sans-serif;
+	margin: 1.2rem 0;
+	font-size: 3.4rem;
+	font-weight: 700;
+}
+
+.hero__desc {
+	margin: 1.2rem 0;
+	font-weight: 300;
+	font-size: 1.8rem;
+}

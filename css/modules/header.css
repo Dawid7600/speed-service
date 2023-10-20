@@ -1,0 +1,16 @@
+header .logo {
+	padding: 2.7rem 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.logo {
+	font-family: "Advent Pro", sans-serif;
+	font-size: 3rem;
+	font-weight: normal;
+}
+
+.nav {
+	display: none;
+}

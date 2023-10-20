@@ -1,0 +1,21 @@
+@import url(/css/variables/variables.css);
+@import url(/css/base/reset.css);
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	color: var(--color-white);
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-black);
+}
+
+.wrapper {
+	text-align: center;
+	background-color: var(--color-black);
+}

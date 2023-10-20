@@ -1,0 +1,21 @@
+footer {
+	padding: 2.5rem 0;
+}
+
+footer .logo span {
+	color: var(--color-blue);
+}
+
+footer .line {
+	margin: 1.5rem auto;
+}
+
+.footer__paragraph {
+	font-size: 1.6rem;
+	padding-bottom: 1.5rem;
+	font-weight: 300;
+}
+
+footer span {
+	font-weight: bold;
+}

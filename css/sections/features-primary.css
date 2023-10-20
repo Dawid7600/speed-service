@@ -1,0 +1,36 @@
+.features-primary {
+	padding: 1rem 1.5rem;
+}
+
+.features-primary__heading {
+	margin-bottom: 1rem;
+	font-size: 2.6rem;
+	font-weight: 300;
+}
+
+.features-primary__heading span {
+	color: var(--color-blue);
+	font-weight: bold;
+}
+
+.features-primary__container:last-of-type {
+	display: none;
+}
+
+.features-primary .container {
+	width: 95%;
+	margin: 2rem auto;
+	padding: 2rem;
+	border-radius: 10px;
+	background-color: var(--color-light-grey);
+}
+
+.container .features-primary__heading {
+	color: var(--color-blue);
+	font-weight: 600;
+}
+
+.features-primary__paragraph {
+	font-size: 1.8rem;
+	font-weight: 300;
+}

@@ -1,0 +1,24 @@
+.services__list {
+	padding: 0 2rem;
+}
+
+.services__item__container .line {
+	display: none;
+}
+
+.services__item__heading {
+	font-size: 2.6rem;
+	color: var(--color-blue);
+	margin: 1.5rem 0;
+}
+
+.services__item__paragraph {
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+.services__item__image {
+	margin: 1.5rem 0;
+	width: 100%;
+	border-radius: 50px;
+}
