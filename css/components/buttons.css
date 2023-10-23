@@ -1,5 +1,4 @@
 .btn {
-	display: inline-block;
 	background-color: var(--color-white);
 	color: var(--color-blue);
 	border-radius: 15px;
@@ -16,4 +15,15 @@
 	padding: 1rem 3rem;
 	font-size: 1.8rem;
 	font-weight: bold;
+}
+
+.btn-car-info {
+	border-radius: 10px;
+	font-size: 1.6rem;
+	font-weight: 300;
+	width: 60%;
+	margin: 0.25rem 0;
+	padding: 0.5rem 1rem;
+	background-color: var(--color-blue);
+	color: var(--color-white);
 }

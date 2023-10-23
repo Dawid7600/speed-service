@@ -1,0 +1,67 @@
+@import url(/css/components/buttons.css);
+
+.car-fleet__container,
+.car-fleet__grid-container {
+	width: 85%;
+	margin: auto;
+}
+
+.car-fleet__heading {
+	font-size: 2.6rem;
+	color: var(--color-blue);
+	margin: 1.5rem 0;
+}
+
+.car-fleet__paragraph {
+	margin: 2rem 0;
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+.car-fleet__subheading {
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+
+.car-container {
+	position: relative;
+	height: 30rem;
+	border-radius: 25px;
+	margin: 2rem 0;
+	background-position: center;
+	background-size: cover;
+}
+
+.car-fleet__flex-container {
+	width: 70%;
+	position: absolute;
+	left: 50%;
+	bottom: 3%;
+	transform: translateX(-50%);
+}
+
+.car-name__heading {
+	background-color: var(--color-white);
+	color: var(--color-blue);
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+	border-radius: 10px;
+	font-size: 1.6rem;
+}
+
+.item-a {
+	background-image: url(/images/car-fleet/bmw.webp);
+}
+
+.item-b {
+	background-image: url(/images/car-fleet/vw.webp);
+}
+
+.item-c {
+	background-image: url(/images/car-fleet/skoda.webp);
+}
+
+.item-d {
+	background-image: url(/images/car-fleet/audi.webp);
+}
