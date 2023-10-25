@@ -27,3 +27,10 @@
 	background-color: var(--color-blue);
 	color: var(--color-white);
 }
+
+.btn-submit {
+	margin: 2rem 0;
+	padding: 1rem 3rem;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
