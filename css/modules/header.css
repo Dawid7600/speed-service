@@ -1,16 +1,13 @@
-header .logo {
-	padding: 2.7rem 0;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+@import url(/css/components/navigation.css);
+
+header > .logo {
+	margin: 1.3rem 0;
+	padding: 1.3rem;
 }
 
 .logo {
+	cursor: pointer;
 	font-family: "Advent Pro", sans-serif;
 	font-size: 3rem;
 	font-weight: normal;
-}
-
-.nav {
-	display: none;
 }

@@ -10,10 +10,12 @@ body {
 	color: var(--color-white);
 }
 
-a {
+a,
+ul,
+li {
 	display: inline-block;
 	text-decoration: none;
-	color: var(--color-black);
+	color: var(--color-white);
 }
 
 .wrapper {
