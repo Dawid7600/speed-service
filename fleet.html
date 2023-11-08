@@ -17,7 +17,7 @@
 
 		<link rel="stylesheet" href="/css/base/styles.css" />
 		<link rel="stylesheet" href="/css/pages/fleet.css" />
-		<script src="/js/main.js" defer></script>
+		<script type="module" src="/js/main.js" defer></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -52,6 +52,8 @@
 			</header>
 
 			<main>
+				<div id="overlay"></div>
+				<div id="displayPageContainer"></div>
 				<section class="car-fleet">
 					<div class="line"></div>
 					<h2 class="car-fleet__heading">Wybierz luksus i komfort podróży</h2>
@@ -86,25 +88,36 @@
 						<div class="car-container full-width item-a">
 							<div class="car-fleet__flex-container">
 								<h4 class="car-name__heading">BMW F10 520d xDrive</h4>
-								<a class="btn btn-car-info" href="#">Zobacz więcej</a>
+								<a
+									id="btnBmwF10Info"
+									class="btn btn-car-info"
+									href="/pages/bmw-f10.html"
+									>Zobacz więcej</a
+								>
 							</div>
 						</div>
 						<div class="car-container half-width item-b">
 							<div class="car-fleet__flex-container">
 								<h4 class="car-name__heading">Volkswagen Caravalle T5</h4>
-								<a class="btn btn-car-info" href="#">Zobacz więcej</a>
+								<a id="btnVwCaravalleT5Info" class="btn btn-car-info" href="#"
+									>Zobacz więcej</a
+								>
 							</div>
 						</div>
 						<div class="car-container half-width item-c">
 							<div class="car-fleet__flex-container">
 								<h4 class="car-name__heading">Skoda Superb III</h4>
-								<a class="btn btn-car-info" href="#">Zobacz więcej</a>
+								<a id="btnSkodaSuperbInfo" class="btn btn-car-info" href="#"
+									>Zobacz więcej</a
+								>
 							</div>
 						</div>
 						<div class="car-container full-width item-d">
 							<div class="car-fleet__flex-container">
 								<h4 class="car-name__heading">Audi A6 Kombi</h4>
-								<a class="btn btn-car-info" href="#">Zobacz więcej</a>
+								<a id="btnAudiA6Info" class="btn btn-car-info" href="#"
+									>Zobacz więcej</a
+								>
 							</div>
 						</div>
 					</div>

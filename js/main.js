@@ -1,40 +1,17 @@
-const navList = document.querySelector(".nav__list");
-const btnHamburger = document.querySelector(".btn-hamburger");
+import { initializeMenu } from "./modules/menu.js";
+import { displayPage } from "./modules/pageDisplay.js";
+
+initializeMenu();
+
 const btnBook = document.querySelector(".btn-book");
-const formContainer = document.getElementById("formContainer");
-const overlay = document.getElementById("overlay");
+const bmwF10Info = document.getElementById("btnBmwF10Info");
 
-btnHamburger.addEventListener("click", function (event) {
-	event.stopPropagation();
-	navList.classList.toggle("nav__list-is-active");
+btnBook?.addEventListener("click", (event) => {
+	event.preventDefault();
+	displayPage(btnBook.getAttribute("href"));
 });
 
-document.addEventListener("click", function (event) {
-	if (!navList.contains(event.target) && !btnHamburger.contains(event.target)) {
-		navList.classList.remove("nav__list-is-active");
-	}
+bmwF10Info?.addEventListener("click", (event) => {
+	event.preventDefault();
+	displayPage(bmwF10Info.getAttribute("href"));
 });
-
-function displayForm() {
-	overlay.style.display = "block";
-
-	fetch("form.html")
-		.then((response) => response.text())
-		.then((html) => {
-			formContainer.innerHTML = html;
-
-			const btnCloseForm = document.getElementById("btnCloseForm");
-
-			btnCloseForm.addEventListener("click", () => {
-				formContainer.innerHTML = "";
-				overlay.style.display = "none";
-			});
-		});
-
-	overlay.addEventListener("click", () => {
-		formContainer.innerHTML = "";
-		overlay.style.display = "none";
-	});
-}
-
-btnBook.addEventListener("click", displayForm);
