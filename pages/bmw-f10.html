@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="/css/components/buttons.css" />
 		<link rel="stylesheet" href="/css/components/overlay.css" />
 		<link rel="stylesheet" href="/css/sections/car-info.css" />
+		<link rel="stylesheet" href="/css/components/zoomed.css" />
 	</head>
 	<body>
 		<main>
@@ -24,38 +25,38 @@
 
 				<div class="car__images">
 					<img
-						class="car__main-image"
+						class="car__main-image zoomable"
 						src="/images/car-fleet/bmw-f10/1.webp"
 						alt="BMW F10"
 					/>
 					<div class="car__images__grid-container">
 						<img
-							class="car__image"
+							class="car__image zoomable"
 							src="/images/car-fleet/bmw-f10/2.webp"
 							alt="BMW F10"
 						/>
 						<img
-							class="car__image"
+							class="car__image zoomable"
 							src="/images/car-fleet/bmw-f10/3.webp"
 							alt="BMW F10"
 						/>
 						<img
-							class="car__image"
+							class="car__image zoomable"
 							src="/images/car-fleet/bmw-f10/4.webp"
 							alt="BMW F10"
 						/>
 						<img
-							class="car__image"
+							class="car__image zoomable"
 							src="/images/car-fleet/bmw-f10/5.webp"
 							alt="BMW F10"
 						/>
 						<img
-							class="car__image"
+							class="car__image zoomable"
 							src="/images/car-fleet/bmw-f10/6.webp"
 							alt="BMW F10"
 						/>
 						<img
-							class="car__main-image"
+							class="car__image zoomable"
 							src="/images/car-fleet/bmw-f10/7.webp"
 							alt="BMW F10"
 						/>
@@ -102,5 +103,26 @@
 				</div>
 			</section>
 		</main>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const zoomableImages = document.querySelectorAll(".zoomable");
+
+				zoomableImages.forEach((image) => {
+					image.addEventListener("click", function () {
+						toggleZoom(image);
+					});
+				});
+
+				function toggleZoom(image) {
+					const isZoomed = image.classList.contains("zoomed");
+
+					if (isZoomed) {
+						image.classList.remove("zoomed");
+					} else {
+						image.classList.add("zoomed");
+					}
+				}
+			});
+		</script>
 	</body>
 </html>
