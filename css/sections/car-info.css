@@ -1,0 +1,52 @@
+.car__container {
+	margin: 2rem 1rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.car__title {
+	color: var(--color-blue);
+	font-family: "Advent Pro", sans-serif;
+	font-size: 2.6rem;
+}
+
+.car__year {
+	font-size: 1.3em;
+}
+
+.car__logo {
+	margin: 2rem;
+}
+
+.car__images img {
+	width: 100%;
+	border-radius: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.car__images__grid-container {
+	margin: 1rem 2rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+
+.car-specs {
+	margin: 4rem 0;
+}
+
+.car-specs__container {
+	width: 80%;
+	margin: 1.25rem auto;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.4rem;
+}
+
+.car-specs__category-result {
+	font-weight: bold;
+}

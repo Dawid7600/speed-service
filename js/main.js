@@ -4,14 +4,21 @@ import { displayPage } from "./modules/pageDisplay.js";
 initializeMenu();
 
 const btnBook = document.querySelector(".btn-book");
-const bmwF10Info = document.getElementById("btnBmwF10Info");
+const carInfoButtons = document.querySelectorAll(".btn-car-info");
 
-btnBook?.addEventListener("click", (event) => {
+function handleButtonClick(event) {
 	event.preventDefault();
-	displayPage(btnBook.getAttribute("href"));
-});
 
-bmwF10Info?.addEventListener("click", (event) => {
-	event.preventDefault();
-	displayPage(bmwF10Info.getAttribute("href"));
+	const pageHref = event.target.getAttribute("href");
+
+	if (pageHref) {
+		displayPage(pageHref);
+		window.scrollTo(0, 0);
+	}
+}
+
+btnBook?.addEventListener("click", handleButtonClick);
+
+carInfoButtons.forEach((button) => {
+	button.addEventListener("click", handleButtonClick);
 });
