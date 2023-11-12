@@ -49,7 +49,6 @@ function createZoomedContainer(src, alt) {
 	zoomedImage.alt = alt;
 	zoomedContainer.classList.add("zoomed");
 
-	// Ustawianie stylu za pomocą klasy lub obiektu stylu
 	Object.assign(zoomedContainer.style, zoomedStyles);
 
 	zoomedContainer.appendChild(zoomedImage);

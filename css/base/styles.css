@@ -1,5 +1,6 @@
 @import url(/css/variables/variables.css);
 @import url(/css/base/reset.css);
+@import url(/css/base/responsive.css);
 
 html {
 	font-size: 62.5%;
@@ -40,6 +41,7 @@ textarea {
 }
 
 textarea {
+	width: 100%;
 	resize: none;
 }
 

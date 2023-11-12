@@ -1,6 +1,7 @@
 @import url(/css/components/buttons.css);
 
 .form-container {
+	width: 70%;
 	position: fixed;
 	top: 50%;
 	left: 50%;

@@ -1,0 +1,148 @@
+@media only screen and (min-width: 640px) {
+	.logo {
+		font-size: 4rem;
+	}
+
+	.hero {
+		padding: 0 3rem;
+	}
+
+	.hero__heading {
+		font-size: 4rem;
+	}
+
+	.hero__desc {
+		font-size: 2rem;
+	}
+
+	.btn-hamburger__box {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	.btn-close {
+		top: 2rem;
+		right: 2rem;
+	}
+
+	.nav__list {
+		width: 20rem;
+	}
+
+	.nav__link {
+		padding: 1.25rem 1.5rem;
+	}
+
+	.features-primary__container,
+	.features-secondary__container,
+	.services {
+		width: 75%;
+		margin: auto;
+	}
+
+	.features-primary__heading,
+	.services__item__heading {
+		margin-bottom: 2rem;
+	}
+
+	.features-primary__paragraph,
+	.features-secondary__paragraph,
+	.services__item__paragraph,
+	.contact-info__paragraph {
+		margin: 1.5rem 0;
+		line-height: 1.5;
+	}
+
+	.features-secondary__heading {
+		margin: 2rem 0;
+	}
+
+	.features-secondary__container {
+		margin: 2rem auto;
+		padding-bottom: 1rem;
+	}
+
+	.contact {
+		width: 90%;
+		margin: 2rem auto;
+		padding: 2rem 1rem;
+	}
+
+	.services__item__image {
+		margin: 1rem 0;
+		width: 90%;
+	}
+
+	.car__title {
+		font-size: 3.6rem;
+	}
+
+	.car__year {
+		font-size: 1.6rem;
+	}
+
+	.car-fleet__grid-container {
+		width: 70%;
+	}
+
+	.car-name__heading {
+		margin: 1rem 0;
+	}
+
+	.btn-car-info {
+		padding: 0.75rem 1rem;
+	}
+
+	.car__heading {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		margin-bottom: 2rem;
+	}
+
+	.car__logo {
+		margin: 0;
+	}
+
+	.car__images {
+		width: 80%;
+		margin: auto;
+	}
+
+	.car-specs {
+		margin: 4rem;
+	}
+
+	.car-specs__category,
+	.car-specs__category-result {
+		font-size: 1.8rem;
+	}
+
+	.company-info__image {
+		width: 80%;
+	}
+
+	.location__map {
+		height: 40rem;
+	}
+
+	.contact-info__flex-container:first-child {
+		width: 80%;
+		margin: auto;
+		padding: 4rem 2rem;
+	}
+
+	.contact-info__subheading {
+		font-size: 2rem;
+	}
+
+	label {
+		font-size: 1.6rem;
+	}
+
+	.contact-info__list {
+		width: 60%;
+	}
+}

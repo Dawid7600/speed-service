@@ -13,6 +13,10 @@
 	font-weight: bold;
 }
 
+.features-primary__container {
+	width: 100%;
+}
+
 .features-primary__container:last-of-type {
 	display: none;
 }
@@ -33,4 +37,9 @@
 .features-primary__paragraph {
 	font-size: 1.8rem;
 	font-weight: 300;
+}
+
+.features-primary__image {
+	width: 100%;
+	border-radius: 25px;
 }
