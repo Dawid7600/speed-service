@@ -3,6 +3,7 @@
 	--color-white: #fff;
 	--color-black: #000;
 	--color-light-grey: #292929;
+	--color-light-grey-op-80: rgba(41, 41, 41, 0.8);
 	--color-black-op-80: rgba(0, 0, 0, 0.8);
 	--color-black-op-95: rgba(0, 0, 0, 0.95);
 }

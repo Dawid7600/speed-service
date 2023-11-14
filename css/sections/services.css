@@ -1,5 +1,9 @@
 .services__list {
-	padding: 0 2rem;
+	padding: 1rem 2rem;
+}
+
+.services__item__container {
+	width: 100%;
 }
 
 .services__item__container .line {

@@ -2,8 +2,9 @@
 	padding: 1rem 1.5rem;
 }
 
-.features-primary__heading {
-	margin-bottom: 1rem;
+.features-primary__heading,
+.features-primary__subheading {
+	padding: 1rem 0;
 	font-size: 2.6rem;
 	font-weight: 300;
 }
@@ -29,7 +30,7 @@
 	background-color: var(--color-light-grey);
 }
 
-.container .features-primary__heading {
+.container .features-primary__subheading {
 	color: var(--color-blue);
 	font-weight: 600;
 }

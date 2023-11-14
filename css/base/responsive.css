@@ -146,3 +146,346 @@
 		width: 60%;
 	}
 }
+
+@media only screen and (min-width: 1024px) {
+	body.index-page header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0rem 5rem;
+
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 76%;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0rem 7rem;
+		padding: 1rem 0;
+	}
+
+	.logo {
+		position: static !important;
+		white-space: nowrap;
+		font-size: 4rem;
+	}
+
+	.btn-hamburger {
+		display: none;
+	}
+
+	.nav__list {
+		background-color: transparent;
+		width: 100%;
+		border: none;
+		position: static;
+		top: 0;
+		left: 0;
+		flex-direction: row;
+		transform: none;
+		transition: none;
+	}
+
+	.nav__item:first-child {
+		display: none;
+	}
+
+	.nav__link {
+		font-size: 2.2rem;
+		white-space: nowrap;
+		margin-right: 2rem;
+		font-weight: 300;
+	}
+
+	.hero {
+		padding: 12rem 0 0 8rem;
+		background-image: url("/images/bmw-night.webp");
+		background-position: bottom;
+		justify-content: start;
+		align-items: flex-start;
+	}
+
+	.hero__heading {
+		text-align: left;
+		font-size: 6rem;
+		width: 65%;
+	}
+
+	.hero__desc {
+		text-align: left;
+		font-size: 2.8rem;
+	}
+
+	.btn-book {
+		margin-top: 2.5rem;
+	}
+
+	.flex-container {
+		width: 100%;
+		display: flex;
+		gap: 2rem;
+	}
+
+	.features-primary__container:first-child {
+		width: 100%;
+		flex: 0 1 60%;
+	}
+
+	.features-primary__container:last-child {
+		width: 100%;
+		display: block;
+		flex: 0 1 40%;
+	}
+
+	.features-primary__heading {
+		font-size: 3rem;
+		width: 65%;
+		margin: auto;
+	}
+
+	.features-secondary__paragraph {
+		width: 90%;
+		margin: auto;
+	}
+
+	.contact {
+		width: 80%;
+	}
+
+	.services__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.services__item {
+		margin: 1rem 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.services__item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+
+	.car-fleet__container {
+		width: 75%;
+		margin: auto;
+	}
+
+	.car-fleet__subheading {
+		margin-bottom: 2rem;
+	}
+
+	.car-fleet__grid-container {
+		display: grid;
+		column-gap: 1rem;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.item-a,
+	.item-d {
+		width: 80%;
+		margin: auto;
+		grid-column: 1 / span 2;
+	}
+
+	.company-info__container {
+		width: 85%;
+		margin: auto;
+	}
+
+	.company-info__container:last-child {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.company-info__container {
+		width: 100%;
+	}
+
+	.location__map {
+		width: 80%;
+	}
+
+	.car__container {
+		width: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.btn-close {
+		top: 2rem;
+		right: 15rem;
+	}
+
+	.contact-info__flex-container:first-child {
+		width: 60%;
+	}
+
+	.contact-info__flex-container:last-child {
+		width: 75%;
+		margin: auto;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	body.index-page header {
+		margin: 0 6rem;
+	}
+
+	.logo {
+		font-size: 5rem;
+	}
+
+	.nav__link {
+		font-size: 2.6rem;
+	}
+
+	.hero {
+		padding: 18rem 0 0 8rem;
+	}
+
+	.features-primary__heading {
+		width: 48%;
+		margin: 0 6rem;
+		font-size: 3.6rem;
+		text-align: left;
+	}
+
+	.features-primary__subheading {
+		font-size: 3rem;
+		padding: 0.5rem 0;
+	}
+
+	.features-primary__container:first-child {
+		flex: 0 1 48%;
+	}
+
+	.features-secondary {
+		height: 100vh;
+		background: url("/images/bmw-side.webp");
+		background-position: center;
+		background-size: cover;
+	}
+
+	.features-secondary__container {
+		margin: 3rem auto;
+		width: 92%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.contact {
+		margin: 16rem auto;
+		background-color: var(--color-light-grey-op-80);
+	}
+
+	.contact__heading {
+		font-size: 3.6rem;
+	}
+
+	.contact__desc {
+		font-size: 3rem;
+	}
+
+	.btn-contact-us {
+		background-color: var(--color-blue);
+		color: var(--color-white);
+		font-size: 3rem;
+		font-weight: normal;
+		padding: 1rem 8rem;
+	}
+
+	.services__item {
+		gap: 3rem;
+	}
+
+	.services__item:nth-child(even) .services__item__heading {
+		right: 0;
+	}
+
+	.services__item__heading {
+		text-align: start;
+		font-family: "Advent Pro", sans-serif;
+		font-size: 5rem;
+	}
+
+	.services__item__paragraph,
+	.features-primary__paragraph,
+	.car-fleet__paragraph,
+	.company-info__paragraph {
+		text-align: justify;
+		font-size: 2rem;
+	}
+
+	.services__item__image {
+		width: 100%;
+	}
+
+	.car-fleet__heading,
+	.contact-info__heading,
+	.company-info__heading {
+		font-size: 3rem;
+	}
+
+	.car-fleet__subheading {
+		font-size: 2rem;
+	}
+
+	.car-container {
+		height: 40rem;
+	}
+
+	.car-name__heading {
+		padding: 0.5rem 0.75rem;
+		font-size: 2.4rem;
+	}
+
+	.btn-car-info {
+		font-size: 2rem;
+		width: 50%;
+	}
+
+	.car__container {
+		width: 80%;
+		height: 100vh;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr 3fr;
+		grid-template-areas:
+			"images heading"
+			"images specs";
+	}
+
+	.car__images {
+		grid-area: images;
+	}
+
+	.car__heading {
+		grid-area: heading;
+		margin: 0;
+		align-items: flex-end;
+	}
+
+	.car-specs {
+		grid-area: specs;
+		margin: auto 0;
+		justify-self: stretch;
+	}
+
+	.company-info,
+	.contact-info {
+		width: 75%;
+	}
+
+	.contact-info__item input {
+		width: 50%;
+	}
+}
