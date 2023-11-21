@@ -152,8 +152,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 0rem 5rem;
-
+		margin: 0rem 6rem;
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
@@ -256,6 +255,10 @@
 		width: 80%;
 	}
 
+	.contact-info__list {
+		width: 40%;
+	}
+
 	.services__list {
 		display: flex;
 		flex-direction: column;
@@ -314,23 +317,44 @@
 	}
 
 	.car__container {
-		width: 50%;
+		width: 90%;
+		height: 100%;
+		margin: auto;
+		padding: 2rem 0;
+		top: 50%;
 		left: 50%;
-		transform: translateX(-50%);
+		transform: translate(-50%, -50%);
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr 3fr;
+		grid-template-areas:
+			"images heading"
+			"images specs";
+	}
+
+	.car__images {
+		grid-area: images;
+	}
+
+	.car__heading {
+		grid-area: heading;
+		margin: 0;
+		align-items: flex-end;
+	}
+
+	.car-specs {
+		grid-area: specs;
+		margin: auto 0;
+		justify-self: stretch;
 	}
 
 	.btn-close {
 		top: 2rem;
-		right: 15rem;
+		right: 5rem;
 	}
 
 	.contact-info__flex-container:first-child {
 		width: 60%;
-	}
-
-	.contact-info__flex-container:last-child {
-		width: 75%;
-		margin: auto;
 	}
 }
 
@@ -369,7 +393,7 @@
 
 	.features-secondary {
 		height: 100vh;
-		background: url("/images/bmw-side.webp");
+		background: url("/images/abstract-photo-2.webp");
 		background-position: center;
 		background-size: cover;
 	}
@@ -383,8 +407,7 @@
 	}
 
 	.contact {
-		margin: 16rem auto;
-		background-color: var(--color-light-grey-op-80);
+		background-color: transparent;
 	}
 
 	.contact__heading {
@@ -453,33 +476,6 @@
 		width: 50%;
 	}
 
-	.car__container {
-		width: 80%;
-		height: 100vh;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 1fr 3fr;
-		grid-template-areas:
-			"images heading"
-			"images specs";
-	}
-
-	.car__images {
-		grid-area: images;
-	}
-
-	.car__heading {
-		grid-area: heading;
-		margin: 0;
-		align-items: flex-end;
-	}
-
-	.car-specs {
-		grid-area: specs;
-		margin: auto 0;
-		justify-self: stretch;
-	}
-
 	.company-info,
 	.contact-info {
 		width: 75%;
@@ -487,5 +483,67 @@
 
 	.contact-info__item input {
 		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1440px) {
+	body.index-page header {
+		margin: 0 4rem;
+	}
+
+	.contact {
+		margin: 20rem auto;
+	}
+
+	.car-fleet {
+		background: url("/images/abstract-photo-2.webp");
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.company-info {
+		background: url("/images/abstract-photo-3.webp");
+		background-size: cover;
+	}
+
+	.services {
+		background: url("/images/abstract-photo-3.webp");
+		background-size: 89%;
+	}
+
+	.contact-info__list {
+		width: 30%;
+	}
+
+	.contact-info__item label {
+		font-size: 1.8rem;
+	}
+}
+
+@media only screen and (min-width: 1920px) {
+	body.index-page header {
+		margin: 0 -1.4rem;
+	}
+
+	.hero {
+		padding: 18rem 0 0 15rem;
+	}
+
+	header {
+		padding: 1rem 6rem;
+	}
+
+	.features-primary__heading {
+		margin: 1rem 6rem;
+	}
+
+	.features-secondary__container {
+		width: 100%;
+	}
+
+	.services__item {
+		width: 85%;
+		margin: 2rem auto;
+		gap: 7rem;
 	}
 }

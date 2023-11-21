@@ -28,11 +28,19 @@
 	background-size: cover;
 }
 
+.car__main-image {
+	max-width: 500px;
+}
+
 .car__images__grid-container {
 	margin: 1rem 2rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 1rem;
+}
+
+.car__images__grid-container .car__image {
+	max-width: 180px;
 }
 
 .car-specs {
