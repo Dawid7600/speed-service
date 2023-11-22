@@ -1,5 +1,10 @@
 @import url(/css/components/buttons.css);
 
+.car-fleet {
+	background: url("/images/abstract-photo-2.webp");
+	background-size: 112% 39%;
+}
+
 .car-fleet__container,
 .car-fleet__grid-container {
 	width: 85%;

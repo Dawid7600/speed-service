@@ -1,7 +1,7 @@
 .features-primary {
 	background: url("/images/abstract-photo-2.webp");
 	background-position: center;
-	background-size: cover;
+	background-size: 100% 31%;
 	padding: 1rem 1.5rem;
 }
 

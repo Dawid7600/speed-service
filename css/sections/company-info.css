@@ -2,6 +2,8 @@
 	padding-bottom: 2rem;
 	width: 85%;
 	margin: auto;
+	background: url("/images/abstract-photo-3.webp");
+	background-size: cover;
 }
 
 .company-info__heading {

@@ -81,6 +81,10 @@
 		font-size: 1.6rem;
 	}
 
+	.car-fleet {
+		background-size: 112% 53%;
+	}
+
 	.car-fleet__grid-container {
 		width: 70%;
 	}
@@ -118,6 +122,10 @@
 	.car-specs__category,
 	.car-specs__category-result {
 		font-size: 1.8rem;
+	}
+
+	.company-info {
+		background-size: 100% 72%;
 	}
 
 	.company-info__image {
@@ -229,6 +237,10 @@
 		gap: 2rem;
 	}
 
+	.features-primary {
+		background-size: 100% 109%;
+	}
+
 	.features-primary__container:first-child {
 		width: 100%;
 		flex: 0 1 60%;
@@ -246,6 +258,10 @@
 		margin: auto;
 	}
 
+	.features-secondary {
+		background-size: 100% 79%;
+	}
+
 	.features-secondary__paragraph {
 		width: 90%;
 		margin: auto;
@@ -257,6 +273,10 @@
 
 	.contact-info__list {
 		width: 40%;
+	}
+
+	.services {
+		background-size: 100% 20%;
 	}
 
 	.services__list {
@@ -273,6 +293,10 @@
 
 	.services__item:nth-child(even) {
 		flex-direction: row-reverse;
+	}
+
+	.car-fleet {
+		background-size: 100% 52%;
 	}
 
 	.car-fleet__container {
@@ -295,6 +319,10 @@
 		width: 80%;
 		margin: auto;
 		grid-column: 1 / span 2;
+	}
+
+	.company-info {
+		background-size: 54% 122%;
 	}
 
 	.company-info__container {
@@ -375,6 +403,10 @@
 		padding: 18rem 0 0 8rem;
 	}
 
+	.features-primary {
+		background-size: 73% 119%;
+	}
+
 	.features-primary__heading {
 		width: 48%;
 		margin: 0 6rem;
@@ -393,9 +425,7 @@
 
 	.features-secondary {
 		height: 100vh;
-		background: url("/images/abstract-photo-2.webp");
-		background-position: center;
-		background-size: cover;
+		background-size: 100% 125%;
 	}
 
 	.features-secondary__container {
@@ -438,6 +468,10 @@
 		text-align: start;
 		font-family: "Advent Pro", sans-serif;
 		font-size: 5rem;
+	}
+
+	.car-fleet {
+		background-size: 100% 47%;
 	}
 
 	.services__item__paragraph,
@@ -491,24 +525,16 @@
 		margin: 0 4rem;
 	}
 
+	.features-primary {
+		background-size: 73% 73%;
+	}
+
 	.contact {
 		margin: 20rem auto;
 	}
 
 	.car-fleet {
-		background: url("/images/abstract-photo-2.webp");
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
-
-	.company-info {
-		background: url("/images/abstract-photo-3.webp");
-		background-size: cover;
-	}
-
-	.services {
-		background: url("/images/abstract-photo-3.webp");
-		background-size: 89%;
+		background-size: 100% 53%;
 	}
 
 	.contact-info__list {
@@ -545,5 +571,9 @@
 		width: 85%;
 		margin: 2rem auto;
 		gap: 7rem;
+	}
+
+	.car-fleet {
+		background-size: 100% 100%;
 	}
 }

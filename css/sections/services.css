@@ -1,3 +1,8 @@
+.services {
+	background: url("/images/abstract-photo-3.webp");
+	background-size: 95%;
+}
+
 .services__list {
 	padding: 1rem 2rem;
 }
