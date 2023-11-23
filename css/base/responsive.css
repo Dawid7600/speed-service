@@ -222,6 +222,11 @@
 		width: 65%;
 	}
 
+	.hero .white-line {
+		width: 10rem;
+		border-top: 1px solid var(--color-white);
+	}
+
 	.hero__desc {
 		text-align: left;
 		font-size: 2.8rem;
@@ -403,6 +408,11 @@
 		padding: 18rem 0 0 8rem;
 	}
 
+	.white-line {
+		width: 10rem;
+		border-top: 1px solid var(--color-white);
+	}
+
 	.features-primary {
 		background-size: 73% 119%;
 	}
@@ -484,12 +494,6 @@
 
 	.services__item__image {
 		width: 100%;
-	}
-
-	.car-fleet__heading,
-	.contact-info__heading,
-	.company-info__heading {
-		font-size: 3rem;
 	}
 
 	.car-fleet__subheading {

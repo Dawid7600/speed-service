@@ -19,7 +19,8 @@
 }
 
 .contact-info__heading {
-	font-size: 2.6rem;
+	font-family: "Advent Pro", sans-serif;
+	font-size: 5rem;
 	color: var(--color-blue);
 	margin: 1.5rem 0;
 }
@@ -43,7 +44,7 @@
 .contact-info__flex-container:first-child {
 	background-image: url(/images/gradient.webp);
 	background-position: center;
-	background-size: cover;
+	background-size: 100%;
 }
 
 .contact-info__flex-container .contact-info__paragraph,

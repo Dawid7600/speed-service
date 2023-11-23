@@ -5,6 +5,10 @@
 	padding: 1rem 1.5rem;
 }
 
+.features-primary__heading {
+	margin: 1rem 0;
+}
+
 .features-primary__heading,
 .features-primary__subheading {
 	padding: 1rem 0;
