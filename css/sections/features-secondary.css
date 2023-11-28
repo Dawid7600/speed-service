@@ -1,9 +1,9 @@
 .features-secondary {
 	padding: 1.5rem;
-	/* height: 100vh; */
 	background: url("/images/abstract-photo-2.webp");
 	background-position: center;
 	background-size: cover;
+	overflow: hidden;
 }
 
 .features-secondary .container {

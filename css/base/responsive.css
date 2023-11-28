@@ -160,19 +160,25 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 0rem 6rem;
+		/* margin: 0rem 6rem; */
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 76%;
+	}
+
+	body.index-page .logo {
+		position: static;
+		left: 0;
+		transform: translateX(0);
 	}
 
 	header {
+		width: 85%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 0rem 7rem;
 		padding: 1rem 0;
+		margin: auto;
 	}
 
 	.logo {
@@ -209,7 +215,7 @@
 	}
 
 	.hero {
-		padding: 12rem 0 0 8rem;
+		padding: 12rem 0 0 9rem;
 		background-image: url("/images/bmw-night.webp");
 		background-position: bottom;
 		justify-content: start;
@@ -237,9 +243,10 @@
 	}
 
 	.flex-container {
-		width: 100%;
+		width: 92%;
 		display: flex;
 		gap: 2rem;
+		margin: auto;
 	}
 
 	.features-primary {
@@ -392,10 +399,6 @@
 }
 
 @media only screen and (min-width: 1280px) {
-	body.index-page header {
-		margin: 0 6rem;
-	}
-
 	.logo {
 		font-size: 5rem;
 	}
@@ -405,7 +408,7 @@
 	}
 
 	.hero {
-		padding: 18rem 0 0 8rem;
+		padding: 17rem 0 0 11rem;
 	}
 
 	.white-line {
@@ -417,9 +420,13 @@
 		background-size: 73% 119%;
 	}
 
+	.flex-container {
+		gap: 0;
+	}
+
 	.features-primary__heading {
 		width: 48%;
-		margin: 0 6rem;
+		margin: 0 10rem;
 		font-size: 3.6rem;
 		text-align: left;
 	}
@@ -430,7 +437,7 @@
 	}
 
 	.features-primary__container:first-child {
-		flex: 0 1 48%;
+		flex: 0 1 50%;
 	}
 
 	.features-secondary {
@@ -487,7 +494,8 @@
 	.services__item__paragraph,
 	.features-primary__paragraph,
 	.car-fleet__paragraph,
-	.company-info__paragraph {
+	.company-info__paragraph,
+	.contact-info__paragraph {
 		text-align: justify;
 		font-size: 2rem;
 	}
@@ -525,10 +533,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-	body.index-page header {
-		margin: 0 4rem;
-	}
-
 	.features-primary {
 		background-size: 73% 73%;
 	}
@@ -551,33 +555,40 @@
 }
 
 @media only screen and (min-width: 1920px) {
-	body.index-page header {
-		margin: 0 -1.4rem;
-	}
-
 	.hero {
-		padding: 18rem 0 0 15rem;
+		padding: 22rem 0 0 13rem;
 	}
 
 	header {
+		width: 95%;
 		padding: 1rem 6rem;
 	}
 
 	.features-primary__heading {
-		margin: 1rem 6rem;
+		margin: 1rem 14rem;
 	}
 
 	.features-secondary__container {
-		width: 100%;
+		width: 89%;
 	}
 
 	.services__item {
-		width: 85%;
+		width: 80%;
 		margin: 2rem auto;
 		gap: 7rem;
 	}
 
 	.car-fleet {
 		background-size: 100% 100%;
+	}
+
+	.car-fleet__wrapper,
+	.car-fleet__container,
+	.location__wrapper,
+	.company-info__container,
+	.location,
+	.contact-info__wrapper {
+		width: 80%;
+		margin: auto;
 	}
 }

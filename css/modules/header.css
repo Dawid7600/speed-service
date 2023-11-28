@@ -7,3 +7,9 @@
 	font-size: 3rem;
 	font-weight: normal;
 }
+
+body.index-page .logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}

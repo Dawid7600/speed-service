@@ -3,6 +3,7 @@
 	background-position: center;
 	background-size: 100% 31%;
 	padding: 1rem 1.5rem;
+	overflow: hidden;
 }
 
 .features-primary__heading {
@@ -48,6 +49,6 @@
 }
 
 .features-primary__image {
-	width: 100%;
+	width: 85%;
 	border-radius: 25px;
 }

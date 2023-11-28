@@ -19,13 +19,14 @@
 		<link rel="stylesheet" href="/css/components/zoomed.css" />
 		<link rel="stylesheet" href="/css/base/styles.css" />
 		<script type="module" src="/js/main.js" defer></script>
+		<script src="/js/modules/anime.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header>
 				<a href="index.html" class="logo">Speed Service</a>
 				<nav class="nav">
-					<button class="btn-hamburger">
+					<button type="menu" class="btn-hamburger">
 						<span class="btn-hamburger__box">
 							<span class="btn-hamburger__bar"></span>
 							<span class="btn-hamburger__bar"></span>
@@ -56,78 +57,80 @@
 				<div id="overlay"></div>
 				<div id="displayPageContainer"></div>
 				<section class="car-fleet">
-					<div class="line"></div>
-					<h2 class="car-fleet__heading">Wybierz luksus i komfort podróży</h2>
-					<div class="car-fleet__container">
-						<p class="car-fleet__paragraph">
-							Nasza flota samochodów składa się z najwyższej jakości luksusowych
-							pojazdów, które zapewniają nie tylko komfort i elegancję, ale
-							także bezpieczeństwo i niezawodność. Posiadamy różne modele
-							samochodów, w tym limuzyny, vany, SUV-y i inne, co pozwala nam
-							dostosować się do różnych potrzeb i preferencji naszych klientów.
-						</p>
-						<p class="car-fleet__paragraph">
-							Wszystkie nasze samochody są w pełni wyposażone w
-							najnowocześniejsze technologie, w tym systemy nawigacji GPS,
-							klimatyzację, regulowane siedzenia, systemy multimedialne,
-							odtwarzacze DVD i wiele innych. Dodatkowo, nasze samochody są
-							regularnie serwisowane i przeglądane, aby zapewnić maksymalną
-							wydajność i bezpieczeństwo na drodze.
-						</p>
-						<p class="car-fleet__paragraph">
-							Dla nas najważniejsze jest zadowolenie klientów, dlatego staramy
-							się zapewnić najlepsze możliwe doświadczenie związane z
-							przemieszczaniem się. Nasza flota samochodów jest ciągle rozwijana
-							i aktualizowana, aby sprostać rosnącym wymaganiom i oczekiwaniom
-							klientów.
-						</p>
-					</div>
-					<h3 class="car-fleet__subheading">
-						Dowiedz się więcej o naszych samochodach:
-					</h3>
-					<div class="car-fleet__grid-container">
-						<div class="car-container full-width item-a">
-							<div class="car-fleet__flex-container">
-								<h4 class="car-name__heading">BMW F10 520d xDrive</h4>
-								<a
-									id="btnBmwF10Info"
-									class="btn btn-car-info"
-									href="/pages/bmw-f10.html"
-									>Zobacz więcej</a
-								>
-							</div>
+					<div class="car-fleet__wrapper">
+						<h2 class="car-fleet__heading">Wybierz luksus i komfort podróży</h2>
+						<div class="car-fleet__container">
+							<p class="car-fleet__paragraph">
+								Nasza flota samochodów składa się z najwyższej jakości
+								luksusowych pojazdów, które zapewniają nie tylko komfort i
+								elegancję, ale także bezpieczeństwo i niezawodność. Posiadamy
+								różne modele samochodów, w tym limuzyny, vany, SUV-y i inne, co
+								pozwala nam dostosować się do różnych potrzeb i preferencji
+								naszych klientów.
+							</p>
+							<p class="car-fleet__paragraph">
+								Wszystkie nasze samochody są w pełni wyposażone w
+								najnowocześniejsze technologie, w tym systemy nawigacji GPS,
+								klimatyzację, regulowane siedzenia, systemy multimedialne,
+								odtwarzacze DVD i wiele innych. Dodatkowo, nasze samochody są
+								regularnie serwisowane i przeglądane, aby zapewnić maksymalną
+								wydajność i bezpieczeństwo na drodze.
+							</p>
+							<p class="car-fleet__paragraph">
+								Dla nas najważniejsze jest zadowolenie klientów, dlatego staramy
+								się zapewnić najlepsze możliwe doświadczenie związane z
+								przemieszczaniem się. Nasza flota samochodów jest ciągle
+								rozwijana i aktualizowana, aby sprostać rosnącym wymaganiom i
+								oczekiwaniom klientów.
+							</p>
 						</div>
-						<div class="car-container half-width item-b">
-							<div class="car-fleet__flex-container">
-								<h4 class="car-name__heading">Volkswagen Caravelle T5</h4>
-								<a
-									id="btnVwCaravelleT5Info"
-									class="btn btn-car-info"
-									href="/pages/vw-caravelle-t5.html"
-									>Zobacz więcej</a
-								>
+						<h3 class="car-fleet__subheading">
+							Dowiedz się więcej o naszych samochodach:
+						</h3>
+						<div class="car-fleet__grid-container">
+							<div class="car-container full-width item-a">
+								<div class="car-fleet__flex-container">
+									<h4 class="car-name__heading">BMW F10 520d xDrive</h4>
+									<a
+										id="btnBmwF10Info"
+										class="btn btn-car-info"
+										href="/pages/bmw-f10.html"
+										>Zobacz więcej</a
+									>
+								</div>
 							</div>
-						</div>
-						<div class="car-container half-width item-c">
-							<div class="car-fleet__flex-container">
-								<h4 class="car-name__heading">Skoda Superb III</h4>
-								<a
-									id="btnSkodaSuperbInfo"
-									class="btn btn-car-info"
-									href="/pages/skoda-superb-iii.html"
-									>Zobacz więcej</a
-								>
+							<div class="car-container half-width item-b">
+								<div class="car-fleet__flex-container">
+									<h4 class="car-name__heading">Volkswagen Caravelle T5</h4>
+									<a
+										id="btnVwCaravelleT5Info"
+										class="btn btn-car-info"
+										href="/pages/vw-caravelle-t5.html"
+										>Zobacz więcej</a
+									>
+								</div>
 							</div>
-						</div>
-						<div class="car-container full-width item-d">
-							<div class="car-fleet__flex-container">
-								<h4 class="car-name__heading">Audi A6 Kombi</h4>
-								<a
-									id="btnAudiA6Info"
-									class="btn btn-car-info"
-									href="/pages/audi-a6.html"
-									>Zobacz więcej</a
-								>
+							<div class="car-container half-width item-c">
+								<div class="car-fleet__flex-container">
+									<h4 class="car-name__heading">Skoda Superb III</h4>
+									<a
+										id="btnSkodaSuperbInfo"
+										class="btn btn-car-info"
+										href="/pages/skoda-superb-iii.html"
+										>Zobacz więcej</a
+									>
+								</div>
+							</div>
+							<div class="car-container full-width item-d">
+								<div class="car-fleet__flex-container">
+									<h4 class="car-name__heading">Audi A6 Kombi</h4>
+									<a
+										id="btnAudiA6Info"
+										class="btn btn-car-info"
+										href="/pages/audi-a6.html"
+										>Zobacz więcej</a
+									>
+								</div>
 							</div>
 						</div>
 					</div>

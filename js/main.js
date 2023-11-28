@@ -1,5 +1,6 @@
 import { initializeMenu } from "./modules/menu.js";
 import { displayPage } from "./modules/pageDisplay.js";
+import "./modules/animations.js";
 
 initializeMenu();
 

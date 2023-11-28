@@ -18,13 +18,14 @@
 		<link rel="stylesheet" href="/css/pages/contact-us.css" />
 		<link rel="stylesheet" href="/css/base/styles.css" />
 		<script type="module" src="/js/main.js" defer></script>
+		<script src="/js/modules/anime.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<header>
 				<a href="index.html" class="logo">Speed Service</a>
 				<nav class="nav">
-					<button class="btn-hamburger">
+					<button type="menu" class="btn-hamburger">
 						<span class="btn-hamburger__box">
 							<span class="btn-hamburger__bar"></span>
 							<span class="btn-hamburger__bar"></span>
@@ -52,92 +53,94 @@
 			</header>
 			<main>
 				<section class="contact-info">
-					<div class="contact-info__container">
-						<h2 class="contact-info__heading">Skontaktuj się z Nami</h2>
-						<p class="contact-info__paragraph">
-							Jeśli potrzebujesz szybkiego i łatwego sposobu na skontaktowanie
-							się z nami, zachęcamy do skorzystania z naszego formularza
-							kontaktowego. Dzięki niemu możesz szybko przesłać nam swoje
-							pytania lub zapytania o usługi, a my skontaktujemy się z Tobą tak
-							szybko, jak to możliwe. Nie czekaj dłużej - wypełnij formularz i
-							pozwól nam zadbać o Twoje potrzeby transportowe!
-						</p>
-					</div>
-					<div class="contact-info__container">
-						<div class="contact-info__flex-container">
-							<h3 class="contact-info__subheading">Informacje kontaktowe</h3>
+					<div class="contact-info__wrapper">
+						<div class="contact-info__container">
+							<h2 class="contact-info__heading">Skontaktuj się z Nami</h2>
 							<p class="contact-info__paragraph">
-								Po wypełnieniu formularza kontaktowego, skontaktujemy się z Tobą
-								najszybciej jak to możliwe, aby odpowiedzieć na Twoje pytania i
-								zaproponować najlepsze rozwiązania dla Twoich potrzeb.
-								Dziękujemy za zainteresowanie naszymi usługami i czekamy na
-								kontakt.
+								Jeśli potrzebujesz szybkiego i łatwego sposobu na skontaktowanie
+								się z nami, zachęcamy do skorzystania z naszego formularza
+								kontaktowego. Dzięki niemu możesz szybko przesłać nam swoje
+								pytania lub zapytania o usługi, a my skontaktujemy się z Tobą
+								tak szybko, jak to możliwe. Nie czekaj dłużej - wypełnij
+								formularz i pozwól nam zadbać o Twoje potrzeby transportowe!
 							</p>
 						</div>
-						<div class="contact-info__flex-container">
-							<form
-								class="contact-info__form"
-								action="/php/send-mail.php"
-								method="post"
-							>
-								<ul class="contact-info__list">
-									<li class="contact-info__item">
-										<label for="name">Imię</label>
-										<input
-											type="text"
-											name="name"
-											id="name"
-											placeholder="Jan"
-											required
-										/>
-									</li>
+						<div class="contact-info__container">
+							<div class="contact-info__flex-container">
+								<h3 class="contact-info__subheading">Informacje kontaktowe</h3>
+								<p class="contact-info__paragraph">
+									Po wypełnieniu formularza kontaktowego, skontaktujemy się z
+									Tobą najszybciej jak to możliwe, aby odpowiedzieć na Twoje
+									pytania i zaproponować najlepsze rozwiązania dla Twoich
+									potrzeb. Dziękujemy za zainteresowanie naszymi usługami i
+									czekamy na kontakt.
+								</p>
+							</div>
+							<div class="contact-info__flex-container">
+								<form
+									class="contact-info__form"
+									action="/php/send-mail.php"
+									method="post"
+								>
+									<ul class="contact-info__list">
+										<li class="contact-info__item">
+											<label for="name">Imię</label>
+											<input
+												type="text"
+												name="name"
+												id="name"
+												placeholder="Jan"
+												required
+											/>
+										</li>
 
-									<li class="contact-info__item">
-										<label for="surname">Nazwisko</label>
-										<input
-											type="text"
-											name="surname"
-											id="surname"
-											placeholder="Kowalski"
-											required
-										/>
-									</li>
+										<li class="contact-info__item">
+											<label for="surname">Nazwisko</label>
+											<input
+												type="text"
+												name="surname"
+												id="surname"
+												placeholder="Kowalski"
+												required
+											/>
+										</li>
 
-									<li class="contact-info__item">
-										<label for="email">E-mail</label>
-										<input
-											type="email"
-											name="email"
-											id="email"
-											placeholder="jankowalski@gmail.com"
-											required
-										/>
-									</li>
+										<li class="contact-info__item">
+											<label for="email">E-mail</label>
+											<input
+												type="email"
+												name="email"
+												id="email"
+												placeholder="jankowalski@gmail.com"
+												required
+											/>
+										</li>
 
-									<li class="contact-info__item">
-										<label for="phone">Telefon</label>
-										<input
-											type="tel"
-											name="phone"
-											id="phone"
-											placeholder="555444333"
-										/>
-									</li>
+										<li class="contact-info__item">
+											<label for="phone">Telefon</label>
+											<input
+												type="tel"
+												name="phone"
+												id="phone"
+												placeholder="555444333"
+											/>
+										</li>
 
-									<li class="contact-info__item">
-										<label for="message">Wiadomość</label>
-										<textarea
-											name="message"
-											id="message"
-											cols="30"
-											rows="10"
-											placeholder="Tu napisz swoją wiadomość"
-											required
-										></textarea>
-									</li>
-								</ul>
-							</form>
-							<button class="btn btn-submit" type="submit">Wyślij</button>
+										<li class="contact-info__item">
+											<label for="message">Wiadomość</label>
+											<textarea
+												name="message"
+												id="message"
+												cols="30"
+												rows="10"
+												placeholder="Tu napisz swoją wiadomość"
+												required
+											></textarea>
+										</li>
+									</ul>
+								</form>
+								<button class="btn btn-submit" type="submit">Wyślij</button>
+							</div>
 						</div>
 					</div>
 				</section>
